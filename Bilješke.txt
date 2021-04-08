@@ -1,0 +1,14 @@
+- navesti trenutne probleme
+- opisati DMX
+- opisati protokole Art-Net i sACN
+- opisati Unreal Engine
+- opisati virtualnu produkciju
+- opisati prototip
+- napraviti testni model
+	- u Unrealu dodati nekoliko DMX fixtures (svjetla koja se kreću, pale i gase, mjenjaju boju itd.)
+	- kontrolirati simulaciju pomoću MagicQ simulatora slanjem DMX podataka preko Artnet ili sACN protokola
+	- testiranje, opis, rezultati
+- spajanje sa prototipom
+	- spojiti stvarnu kameru sa virtualnom
+- na kraju bismo trebali dobiti sustav kojim kontroliramo svjetla pomoću simulatora
+  te se istovremeno možemo micati po virtualnom prostoru pomoću stvarne kamere
