@@ -71,8 +71,7 @@ FUNCTION {output.nonnull}
     { ", " * write$ }
     { output.state after.block =
         { add.period$ write$
-          newline$
-          "\newblock " write$
+          ", " write$
         }
         { output.state before.all =
             'write$
@@ -197,7 +196,7 @@ FUNCTION {format.names}
   s num.names$ 'numnames :=
   numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't :=
+    { s nameptr "{vv~}{ll}{, f.}{, jj}" format.name$ 't :=
       nameptr #1 >
         { namesleft #1 >
             { ", " * t * }
@@ -263,7 +262,7 @@ FUNCTION {format.issn}
 FUNCTION {format.url}
 { url empty$
     { "" }
-    { new.block "URL \url{" url * "}" * }
+    { new.block "\\URL: \url{" url * "}" * }
   if$
 }
 
@@ -277,7 +276,7 @@ FUNCTION {format.doi}
 FUNCTION {format.title}
 { title empty$
     { "" }
-    { title "t" change.case$ }
+    { new.block title emphasize "t" change.case$ }
   if$
 }
 
@@ -905,15 +904,9 @@ FUNCTION {mastersthesis}
 FUNCTION {misc}
 { output.bibitem
   format.authors output
-  author format.key output
-  title howpublished new.block.checkb
-  format.title output
-  howpublished new.block.checka
-  howpublished output
   format.date output
-  format.issn output
+  format.title output
   format.url output
-  new.block
   note output
   fin.entry
   empty.misc.check
