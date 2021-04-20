@@ -262,7 +262,7 @@ FUNCTION {format.issn}
 FUNCTION {format.url}
 { url empty$
     { "" }
-    { new.block "\\URL: \url{" url * "}" * }
+    { new.block write$ "\\URL: \url{" url * "}" * }
   if$
 }
 

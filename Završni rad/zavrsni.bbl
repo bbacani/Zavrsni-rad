@@ -1,19 +1,30 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Farris(2020.)]{mandalorian}
+Farris, J., 2020., \emph{Forging new paths for filmmakers on "The
+  Mandalorian"}, \\URL:
+  \url{https://www.unrealengine.com/en-US/blog/forging-new-paths-for-filmmakers-on-the-mandalorian},
+  pristupljeno 10.06.2021.
+
 \bibitem[Kader(2019.)]{vpguide1}
-Kader, N., 2019., \emph{The Virtual Production Field Guide v1.2}., \\URL:
+Kader, N., 2019., \emph{The Virtual Production Field Guide v1.2}, \\URL:
   \url{https://cdn2.unrealengine.com/Unreal+Engine%2Fvpfieldguide%2FVP-Field-Guide-V1.2.02-5d28ccec9909ff626e42c619bcbe8ed2bf83138d.pdf},
   pristupljeno 10.06.2021.
 
 \bibitem[Kader(2021.)]{vpguide2}
-Kader, N., 2021., \emph{The Virtual Production Field Guide Volume 2, v1.0}.,
+Kader, N., 2021., \emph{The Virtual Production Field Guide Volume 2, v1.0},
   \\URL:
   \url{https://cdn2.unrealengine.com/Virtual+Production+Field+Guide+Volume+2+v1.0-5b06b62cbc5f.pdf},
-  pristupljeno 10.06.2021.
+  \\pristupljeno 10.06.2021.
+
+\bibitem[Moment\hspace{1mm}Factory(2021.)]{dmx_previs}
+Moment\hspace{1mm}Factory, 2021., \emph{DMX Previs Sample}, \\URL:
+  \url{https://unrealengine.com/marketplace/en-US/learn/dmx-previs-sample},
+  \\pristupljeno 10.06.2021.
 
 \end{thebibliography}
