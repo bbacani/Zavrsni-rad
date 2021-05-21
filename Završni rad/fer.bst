@@ -276,7 +276,7 @@ FUNCTION {format.doi}
 FUNCTION {format.title}
 { title empty$
     { "" }
-    { new.block title emphasize "t" change.case$ }
+    { title emphasize "t" change.case$ }
   if$
 }
 
@@ -904,8 +904,8 @@ FUNCTION {mastersthesis}
 FUNCTION {misc}
 { output.bibitem
   format.authors output
-  format.date output
   format.title output
+  format.date output
   format.url output
   note output
   fin.entry

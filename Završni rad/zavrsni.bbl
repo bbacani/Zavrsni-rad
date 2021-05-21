@@ -1,30 +1,67 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Farris(2020.)]{mandalorian}
-Farris, J., 2020., \emph{Forging new paths for filmmakers on "The
-  Mandalorian"}, \\URL:
+\bibitem[{Artistic Licence}(01.02.2021.)]{art-net}
+{Artistic Licence}, \emph{Specification for the Art-Net 4 Ethernet
+  Communication Protocol, v1.4dd2}, 01.02.2021., \\URL:
+  \url{https://artisticlicence.com/WebSiteMaster/User%20Guides/art-net.pdf},
+  \\pristupljeno 10.06.2021.
+
+\bibitem[{DMX GDTF Support}()]{dmx_gdtf}
+{DMX GDTF Support}, \\URL:
+  \url{https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/GDTFSupport/index.html},
+  \\pristupljeno 10.06.2021.
+
+\bibitem[{DMX Overview}()]{dmx_overview}
+{DMX Overview}, \\URL:
+  \url{https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/Overview/index.html},
+  \\pristupljeno 10.06.2021.
+
+\bibitem[{Entertainment Services and Technology Association -
+  ESTA}(07.11.2018.)]{sACN}
+{Entertainment Services and Technology Association - ESTA}, \emph{ANSI E1.31 -
+  2018, Entertainment Technology Lightweight streaming protocol for transport
+  of DMX512 using ACN}, 07.11.2018., \\URL:
+  \url{https://tsp.esta.org/tsp/documents/docs/ANSI_E1-31-2018.pdf},
+  \\pristupljeno 10.06.2021.
+
+\bibitem[Farris(20.02.2020.)]{mandalorian}
+Farris, J., \emph{Forging new paths for filmmakers on "The Mandalorian"},
+  20.02.2020., \\URL:
   \url{https://www.unrealengine.com/en-US/blog/forging-new-paths-for-filmmakers-on-the-mandalorian},
   pristupljeno 10.06.2021.
 
+\bibitem[{GDTF Share}()]{GDTF}
+{GDTF Share}, \\URL: \url{https://gdtf-share.com}, \\pristupljeno 10.06.2021.
+
 \bibitem[Kader(2019.)]{vpguide1}
-Kader, N., 2019., \emph{The Virtual Production Field Guide v1.2}, \\URL:
+Kader, N., \emph{The Virtual Production Field Guide v1.2}, 2019., \\URL:
   \url{https://cdn2.unrealengine.com/Unreal+Engine%2Fvpfieldguide%2FVP-Field-Guide-V1.2.02-5d28ccec9909ff626e42c619bcbe8ed2bf83138d.pdf},
   pristupljeno 10.06.2021.
 
 \bibitem[Kader(2021.)]{vpguide2}
-Kader, N., 2021., \emph{The Virtual Production Field Guide Volume 2, v1.0},
+Kader, N., \emph{The Virtual Production Field Guide Volume 2, v1.0}, 2021.,
   \\URL:
   \url{https://cdn2.unrealengine.com/Virtual+Production+Field+Guide+Volume+2+v1.0-5b06b62cbc5f.pdf},
   \\pristupljeno 10.06.2021.
 
-\bibitem[Moment\hspace{1mm}Factory(2021.)]{dmx_previs}
-Moment\hspace{1mm}Factory, 2021., \emph{DMX Previs Sample}, \\URL:
+\bibitem[{Moment Factory}(22.02.2021.)]{dmx_previs}
+{Moment Factory}, \emph{DMX Previs Sample}, 22.02.2021., \\URL:
   \url{https://unrealengine.com/marketplace/en-US/learn/dmx-previs-sample},
+  \\pristupljeno 10.06.2021.
+
+\bibitem[{Streaming Packets}()]{streaming_packets}
+{Streaming Packets}, \\URL:
+  \url{https://art-net.org.uk/how-it-works/streaming-packets}, \\pristupljeno
+  10.06.2021.
+
+\bibitem[{Subscription}()]{subscription}
+{Subscription}, \\URL:
+  \url{https://art-net.org.uk/how-it-works/streaming-packets/subscription},
   \\pristupljeno 10.06.2021.
 
 \end{thebibliography}
