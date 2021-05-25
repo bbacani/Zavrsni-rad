@@ -24,51 +24,53 @@ You can't pop an empty literal stack for entry vpguide2
 while executing---line 1400 of file fer.bst
 You can't pop an empty literal stack for entry dmx_previs
 while executing---line 1400 of file fer.bst
+You can't pop an empty literal stack for entry MagicQ_Setup
+while executing---line 1400 of file fer.bst
 Warning--empty year in streaming_packets
 You can't pop an empty literal stack for entry streaming_packets
 while executing---line 1400 of file fer.bst
 Warning--empty year in subscription
 You can't pop an empty literal stack for entry subscription
 while executing---line 1400 of file fer.bst
-You've used 11 entries,
+You've used 12 entries,
             2761 wiz_defined-function locations,
-            641 strings with 6412 characters,
-and the built_in function-call counts, 2954 in all, are:
-= -- 254
-> -- 110
-< -- 11
-+ -- 44
-- -- 33
-* -- 196
-:= -- 473
-add.period$ -- 22
-call.type$ -- 11
-change.case$ -- 39
-chr.to.int$ -- 11
-cite$ -- 27
-duplicate$ -- 138
-empty$ -- 271
-format.name$ -- 44
-if$ -- 591
+            647 strings with 6557 characters,
+and the built_in function-call counts, 3225 in all, are:
+= -- 278
+> -- 120
+< -- 12
++ -- 48
+- -- 36
+* -- 215
+:= -- 516
+add.period$ -- 24
+call.type$ -- 12
+change.case$ -- 43
+chr.to.int$ -- 12
+cite$ -- 29
+duplicate$ -- 151
+empty$ -- 296
+format.name$ -- 48
+if$ -- 646
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 41
-num.names$ -- 44
-pop$ -- 113
+newline$ -- 44
+num.names$ -- 48
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 36
 quote$ -- 0
-skip$ -- 118
+skip$ -- 130
 stack$ -- 0
-substring$ -- 22
-swap$ -- 6
+substring$ -- 24
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 121
+type$ -- 132
 warning$ -- 5
-while$ -- 33
+while$ -- 36
 width$ -- 0
-write$ -- 140
-(There were 11 error messages)
+write$ -- 153
+(There were 12 error messages)
