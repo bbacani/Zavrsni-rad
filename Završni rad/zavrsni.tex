@@ -59,7 +59,7 @@ Virtualna produkcija je metoda slična agilnom razvoju, gdje se korištenjem pog
 \section{Slučajevi upotrebe}
 Vizualizacija je vjerojatno najčešći oblik upotrebe virtualne produkcije, a posebice predvizualizacija, koja u novoj paradigmi pruža prvi uvid u ideje i sredstva koja će se koristiti kroz produkciju \cite{vpguide2}. Poznata uporaba ove tehnike je u seriji \emph{The Mandalorian} (2019.-) gdje je virtualna produkcija bila korištena u snimanju više od pola cijele prve sezone (slika \ref{fig:slika 2-3}).\newline
 
-Osim u filmovima i serijama može se koristiti u predvizualizaciji raznih javnih događaja poput koncerata. Primjerice, tvrtka Moment Factory je u 2021. godini objavila projekt \emph{DMX Previs}, digitalni svjetlosni šou (engl. \emph{light show}) napravljen koristeći DMX plugin u Unrealu (slika \ref{fig:slika 2-4}) koji je sličan primjeru iz stvarnog života te ga se može i upravljati upravljačkom konzolom za osvjetljenje.\newline
+Osim u filmovima i serijama može se koristiti u predvizualizaciji raznih javnih događaja poput koncerata. Primjerice, tvrtka Moment Factory je u 2021. godini objavila projekt \emph{DMX Previs}, digitalni svjetlosni šou (engl. \emph{light show}) napravljen koristeći DMX dodatak (engl. \emph{plugin}) u Unreal Engineu (slika \ref{fig:slika 2-4}) koji je sličan primjeru iz stvarnog života te ga se može i upravljati upravljačkom konzolom za osvjetljenje.\newline
 
 Također, virtualna produkcija koristi se za hvatanje pokreta (engl. \emph{motion capture}) - praćenja pokreta objekata ili glumaca za animaciju digitalnih modela i kod vizualnih efekata u kameri (engl. \emph{in-camera visual effects}, skraćeno in-camera VFX).
 
@@ -154,7 +154,7 @@ Za prijenos DMX podataka koristi se \emph{unicast} ili \emph{broadcast} adresa t
 	\label{fig:slika 3-4}
 \end{figure}
 
-Iako se za slanje \emph{ArtDmx} paketa može koristiti broadcast adresa, u velikom sustavu dolazi do ogromnog opterećenja obrade podataka te se koristi \emph{unicast} adresa. Kako bi se mogla koristiti \emph{unicast} adresa, kontroleri trebaju znati  koji uređaji slušaju na određenom priključniku, što se ostvaruje preplatom (engl. \emph{subscription}) \cite{subscription}. Pretplata se odvija na sljedeći način:
+Iako se za slanje \emph{ArtDmx} paketa može koristiti broadcast adresa, u velikom sustavu dolazi do ogromnog opterećenja obrade podataka te se koristi \emph{unicast} adresa. Kako bi se mogla koristiti \emph{unicast} adresa, kontroleri trebaju znati  koji uređaji slušaju na određenom priključniku, što se ostvaruje preplatom (engl. \emph{subscription}). Pretplata se odvija na sljedeći način: \cite{subscription}
 
 \begin{enumerate}
 	\item Kontroler na \emph{broadcast} adresu šalje \emph{ArtPoll} svakih 2.5 do 3 sekunde.
@@ -194,16 +194,94 @@ Povezivanje s prototipom ostvaruje se korištenjem stvarne kamere, sustava za vi
 \textbf{Umetni sliku!}
 
 \chapter{Korištene tehnologije}
+\textbf{Unreal Engine} \cite{Unreal_Engine} je pogonski sklop igre (engl. \emph{game engine})
+
+\textbf{MagicQ Software} \cite{MagicQ_Software} je
+
+\textbf{DMX Template} \cite{dmx_template} je
+
+\textbf{SteamVR} \cite{SteamVR} je
+
+\textbf{HTC Vive} \cite{HTC_Vive} je
 
 \chapter{Izrada simulacije osvjetljenja}
 
 \section{Postavljanje simulatora}
-Slanje DMX paketa preko mreže ostvareno je pomoću \emph{ChamSys MagicQ} simulatora. Stvoren je novi šou u načinu programiranja \emph{Normal (live)} te kako bi se paketi mogli poslati lokalno na aplikacije na računalu, potrebno je otići u \emph{Setup} te u izborniku \emph{Network} postaviti opciju \emph{Send to Applications on this PC} na \emph{Yes}. Dodatno, u \emph{Setupu} u izborniku \emph{View DMX I/O} potrebno je omogućiti svemire kojima želimo upravljati postavljanjem opcije \emph{Status} na \emph{Enabled}. Za potrebe ovog rada omogućeni su svemiri 1 i 2. Ovdje se također mogu mijenjati ostale opcije poput imena svemira, protokola za prijenos paketa te način slanja paketa. \emph{Unreal Engine} trenutno podržava samo Art-Net i sACN protokole te je ostavljena zadana vrijednost, odnosno Art-Net.\newline
+Slanje DMX paketa preko mreže ostvareno je pomoću \emph{ChamSys MagicQ} simulatora. Stvoren je novi šou u načinu programiranja \emph{Normal (live)} te kako bi se paketi mogli poslati lokalno na aplikacije na računalu, potrebno je otići u \emph{Setup} te u izborniku \emph{Network} postaviti opciju \emph{Send to Applications on this PC} na \emph{Yes}. Dodatno, u \emph{Setupu} u izborniku \emph{View DMX I/O} potrebno je omogućiti svemire kojima želimo upravljati postavljanjem opcije \emph{Status} na \emph{Enabled}. Za potrebe ovog rada omogućeni su svemiri 1 i 2. Ovdje se također mogu mijenjati ostale opcije poput imena svemira, protokola za prijenos paketa te način slanja paketa. Unreal Engine trenutno podržava samo Art-Net i sACN protokole te je ostavljena zadana vrijednost, odnosno Art-Net.\newline
 
-Rasvjetne uređaje povezujemo u sustav u izborniku \emph{Patch}. Uređaj se dodaje odabirom \emph{Choose Head} čime se može izabrati uređaj iz postojeće kolekcije uređaja koji dolaze instalirani sa simulatorom ili se može napraviti vlastiti odabirom \emph{Edit Head} pa zatim \emph{New Head}. Za testno povezivanje odabran je uređaj \emph{Clay Paky Sharpy} u standardnom načinu rada (16-kanalni). Nakon što je odabran uređaj, klikne se na \emph{Patch It} te se upiše koliko uređaja će se spojiti. Pojavljuje se skočni prozor sa opcijom umetanja uređaja u \emph{MagicQ} vizualizator, što se odbija jer se simulator koristi samo za slanje DMX paketa do Unreal sustava. \cite{MagicQ_Setup}
+Rasvjetne uređaje povezujemo u sustav u izborniku \emph{Patch}. Uređaj se dodaje odabirom \emph{Choose Head} čime se može izabrati uređaj iz postojeće kolekcije uređaja koji dolaze instalirani sa simulatorom ili se može napraviti vlastiti odabirom \emph{Edit Head} > \emph{New Head}. Za testno povezivanje odabran je uređaj \emph{Clay Paky Sharpy} u standardnom načinu rada (16-kanalni). Nakon što je odabran uređaj, klikne se na \emph{Patch It} te se upiše koliko uređaja će se spojiti. Pojavljuje se iskočni prozor sa opcijom umetanja uređaja u \emph{MagicQ} vizualizator, što se odbija jer se simulator koristi samo za slanje DMX paketa do Unreal sustava \cite{MagicQ_Manual}.
 
-\section{Povezivanje s Unreal sustavom}
-//TODO
+\section{Povezivanje s Unreal Engineom}
+Napravljen je novi prazan (engl. \emph{Blank}) projekt te su uključeni dodaci (engl. \emph{plugins}) za DMX podršku, \emph{DMX Engine}, \emph{DMX Fixtures}, \emph{DMX Pixel Mapping} i \emph{DMX Protocol}. Dodatak \emph{DMX Fixtures} je trebao uvesti osnovne sheme, ali pošto nije uspio ručno je uvezena datoteka \emph{BP\_MovingHead.uasset} kopiranjem sa lokacije \path{C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\VirtualProduction\DMX\DMXFixtures\Content\LightFixtures} u \emph{Content} direktorij našeg projekta.
+
+Nakon toga, potrebno je kreirati \emph{DMX Library} odabirom \emph{Add/Import} > \emph{DMX} > \emph{DMX Library}. U izborniku \emph{Controllers} klikom na gumb \emph{New Controller} doda se novi DMX Controller te mu se uređuju svojstva (slika \ref{fig:slika 6-1}). \emph{Remote Universe Range Start} je postavljen na 0 jer \emph{Output Universe} u \emph{MagicQ} simulatoru počinje sa indeksom 0 \cite{MagicQ_Setup}.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-1.png}
+	\caption{Postavke kontrolera}
+	\label{fig:slika 6-1}
+\end{figure}
+
+Zatim u izborniku \emph{Fixture Types} klikom na gumb \emph{New Fixture Type} doda se nova vrsta rasvjetnog uređaja. Postavke uređaja mogu se postaviti uvozom GDTF datoteke ili ručno. U \emph{Modes} i \emph{Mode Properties} pregledniku postavlja se način rada, a u \emph{Functions} i \emph{Function Properties} pregledniku postavljaju se funkcije uređaja (slika \ref{fig:slika 6-2}). Ako neka funkcija zauzima dva ili više kanala, \emph{Data Type} se postavi na odgovarajući broj bitova (jedan kanal zauzima jedan bajt).
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-2.png}
+	\caption{Postavke uređaja}
+	\label{fig:slika 6-2}
+\end{figure}
+
+Na kraju, potrebno je obaviti adresiranje u izborniku \emph{Fixture Patch}. Klikom na gumb \emph{Add Fixture} odabere se novokreirani uređaj te mu se postave svemir i adrese (slika \ref{fig:slika 6-3}).
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-3.png}
+	\caption{Adresiranje uređaja}
+	\label{fig:slika 6-3}
+\end{figure}
+
+Pregled svih dolaznih DMX paketa za pojedini svemir može se vidjeti u \emph{DMX Channel Monitoru} ili u \emph{DMX Activity Monitoru} \cite{dmx_quickstart}.\newline
+
+Za testiranje je ubačen \emph{BP\_MovingHead} u scenu te mu je unutar \emph{Details} izbornika postavljen \emph{DMX Library} i \emph{Fixture Patch} (slika \ref{fig:slika 6-4}).
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-4.png}
+	\caption{Scena i DMX postavke pokretne glave}
+	\label{fig:slika 6-4}
+\end{figure}
+
+Nakon pokretanja scene, korištenjem simulatora šalju se DMX paketi do Unreal Enginea što uzrokuje upravljanje pokretnom glavom (slike \ref{fig:slika 6-5} do \ref{fig:slika 6-8}).
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-5.png}
+	\caption{Početno stanje simulatora}
+	\label{fig:slika 6-5}
+\end{figure}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-6.png}
+	\caption{Početno stanje pokretne glave}
+	\label{fig:slika 6-6}
+\end{figure}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-7.png}
+	\caption{Promjena pozicije, boje i zrake}
+	\label{fig:slika 6-7}
+\end{figure}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-8.png}
+	\caption{Promjena stanja pokretne glave}
+	\label{fig:slika 6-8}
+\end{figure}
+
 \section{Simulacija}
 
 \subsection{Konzola}
@@ -211,6 +289,7 @@ Rasvjetne uređaje povezujemo u sustav u izborniku \emph{Patch}. Uređaj se doda
 \subsection{Sekvencer}
 
 \chapter{Integracija s prototipom}
+\cite{vp}
 
 \chapter{Rezultati}
 

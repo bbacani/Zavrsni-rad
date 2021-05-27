@@ -5,11 +5,19 @@ The style file: fer.bst
 Database file #1: literatura.bib
 You can't pop an empty literal stack for entry art-net
 while executing---line 1400 of file fer.bst
+You can't pop an empty literal stack for entry MagicQ_Manual
+while executing---line 1400 of file fer.bst
 Warning--empty year in dmx_gdtf
 You can't pop an empty literal stack for entry dmx_gdtf
 while executing---line 1400 of file fer.bst
 Warning--empty year in dmx_overview
 You can't pop an empty literal stack for entry dmx_overview
+while executing---line 1400 of file fer.bst
+Warning--empty year in dmx_quickstart
+You can't pop an empty literal stack for entry dmx_quickstart
+while executing---line 1400 of file fer.bst
+Warning--empty year in dmx_template
+You can't pop an empty literal stack for entry dmx_template
 while executing---line 1400 of file fer.bst
 You can't pop an empty literal stack for entry sACN
 while executing---line 1400 of file fer.bst
@@ -18,13 +26,24 @@ while executing---line 1400 of file fer.bst
 Warning--empty year in GDTF
 You can't pop an empty literal stack for entry GDTF
 while executing---line 1400 of file fer.bst
+Warning--empty year in HTC_Vive
+You can't pop an empty literal stack for entry HTC_Vive
+while executing---line 1400 of file fer.bst
 You can't pop an empty literal stack for entry vpguide1
 while executing---line 1400 of file fer.bst
 You can't pop an empty literal stack for entry vpguide2
 while executing---line 1400 of file fer.bst
+Warning--empty year in MagicQ_Software
+You can't pop an empty literal stack for entry MagicQ_Software
+while executing---line 1400 of file fer.bst
 You can't pop an empty literal stack for entry dmx_previs
 while executing---line 1400 of file fer.bst
+You can't pop an empty literal stack for entry vp
+while executing---line 1400 of file fer.bst
 You can't pop an empty literal stack for entry MagicQ_Setup
+while executing---line 1400 of file fer.bst
+Warning--empty year in SteamVR
+You can't pop an empty literal stack for entry SteamVR
 while executing---line 1400 of file fer.bst
 Warning--empty year in streaming_packets
 You can't pop an empty literal stack for entry streaming_packets
@@ -32,45 +51,48 @@ while executing---line 1400 of file fer.bst
 Warning--empty year in subscription
 You can't pop an empty literal stack for entry subscription
 while executing---line 1400 of file fer.bst
-You've used 12 entries,
+Warning--empty year in Unreal_Engine
+You can't pop an empty literal stack for entry Unreal_Engine
+while executing---line 1400 of file fer.bst
+You've used 20 entries,
             2761 wiz_defined-function locations,
-            647 strings with 6557 characters,
-and the built_in function-call counts, 3225 in all, are:
-= -- 278
-> -- 120
-< -- 12
-+ -- 48
-- -- 36
-* -- 215
-:= -- 516
-add.period$ -- 24
-call.type$ -- 12
-change.case$ -- 43
-chr.to.int$ -- 12
-cite$ -- 29
-duplicate$ -- 151
-empty$ -- 296
-format.name$ -- 48
-if$ -- 646
+            680 strings with 7318 characters,
+and the built_in function-call counts, 5321 in all, are:
+= -- 458
+> -- 200
+< -- 20
++ -- 80
+- -- 60
+* -- 349
+:= -- 848
+add.period$ -- 40
+call.type$ -- 20
+change.case$ -- 69
+chr.to.int$ -- 20
+cite$ -- 51
+duplicate$ -- 249
+empty$ -- 490
+format.name$ -- 80
+if$ -- 1068
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 44
-num.names$ -- 48
-pop$ -- 121
+newline$ -- 68
+num.names$ -- 80
+pop$ -- 215
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 60
 quote$ -- 0
-skip$ -- 130
+skip$ -- 208
 stack$ -- 0
-substring$ -- 24
-swap$ -- 7
+substring$ -- 40
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 132
-warning$ -- 5
-while$ -- 36
+type$ -- 220
+warning$ -- 11
+while$ -- 60
 width$ -- 0
-write$ -- 153
-(There were 12 error messages)
+write$ -- 245
+(There were 20 error messages)

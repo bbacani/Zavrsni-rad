@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.3)  26 MAY 2021 00:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.3)  27 MAY 2021 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -590,32 +590,77 @@ Poglavlje 5.
 Poglavlje 6.
 [15
 
-] [16]
+]
+<../Slike//slika 6-1.png, id=318, 747.9945pt x 274.02374pt>
+File: ../Slike//slika 6-1.png Graphic file (type png)
+<use ../Slike//slika 6-1.png>
+Package pdftex.def Info: ../Slike//slika 6-1.png  used on input line 221.
+(pdftex.def)             Requested size: 412.56497pt x 151.14418pt.
+<../Slike//slika 6-2.png, id=320, 1156.32pt x 510.10574pt>
+File: ../Slike//slika 6-2.png Graphic file (type png)
+<use ../Slike//slika 6-2.png>
+Package pdftex.def Info: ../Slike//slika 6-2.png  used on input line 230.
+(pdftex.def)             Requested size: 412.56497pt x 181.99559pt.
+ [16 <../Slike//slika 6-1.png> <../Slike//slika 6-2.png>]
+<../Slike//slika 6-3.png, id=332, 1156.32pt x 496.85625pt>
+File: ../Slike//slika 6-3.png Graphic file (type png)
+<use ../Slike//slika 6-3.png>
+Package pdftex.def Info: ../Slike//slika 6-3.png  used on input line 239.
+(pdftex.def)             Requested size: 412.56497pt x 177.26843pt.
+<../Slike//slika 6-4.png, id=335, 1156.32pt x 650.43pt>
+File: ../Slike//slika 6-4.png Graphic file (type png)
+<use ../Slike//slika 6-4.png>
+Package pdftex.def Info: ../Slike//slika 6-4.png  used on input line 250.
+(pdftex.def)             Requested size: 412.56497pt x 232.06049pt.
+<../Slike//slika 6-5.png, id=338, 900.966pt x 498.06075pt>
+File: ../Slike//slika 6-5.png Graphic file (type png)
+<use ../Slike//slika 6-5.png>
+Package pdftex.def Info: ../Slike//slika 6-5.png  used on input line 259.
+(pdftex.def)             Requested size: 412.56497pt x 228.06955pt.
+<../Slike//slika 6-6.png, id=339, 669.702pt x 341.47575pt>
+File: ../Slike//slika 6-6.png Graphic file (type png)
+<use ../Slike//slika 6-6.png>
+Package pdftex.def Info: ../Slike//slika 6-6.png  used on input line 266.
+(pdftex.def)             Requested size: 412.56497pt x 210.36325pt.
+<../Slike//slika 6-7.png, id=340, 900.966pt x 496.85625pt>
+File: ../Slike//slika 6-7.png Graphic file (type png)
+<use ../Slike//slika 6-7.png>
+Package pdftex.def Info: ../Slike//slika 6-7.png  used on input line 273.
+(pdftex.def)             Requested size: 412.56497pt x 227.51799pt.
+<../Slike//slika 6-8.png, id=341, 668.4975pt x 341.47575pt>
+File: ../Slike//slika 6-8.png Graphic file (type png)
+<use ../Slike//slika 6-8.png>
+Package pdftex.def Info: ../Slike//slika 6-8.png  used on input line 280.
+(pdftex.def)             Requested size: 412.56497pt x 210.74883pt.
+ [17 <../Slike//slika 6-3.png> <../Slike//slika 6-4.png>] [18 <../Slike//slika 
+6-5.png> <../Slike//slika 6-6.png>] [19 <../Slike//slika 6-7.png> <../Slike//sl
+ika 6-8.png>]
+[20]
 Poglavlje 7.
-[17
+[21
 
 ]
 Poglavlje 8.
-[18
+[22
 
 ]
 Poglavlje 9.
-(./zavrsni.bbl [19
+(./zavrsni.bbl [23
 
-] [20
+] [24
 
-]) [21] [22] (./zavrsni.aux)
+] [25]) [26] [27] (./zavrsni.aux)
 Package rerunfilecheck Info: File `zavrsni.out' has not changed.
-(rerunfilecheck)             Checksum: BC8E3C8BE9E4B50BC97ADCA5052F69FD;3515.
+(rerunfilecheck)             Checksum: FFCA11D8D8F0ADD0FDE1EB2E9AFD888E;3515.
  ) 
 Here is how much of TeX's memory you used:
- 12751 strings out of 479023
- 187518 string characters out of 5863351
- 514629 words of memory out of 5000000
- 29918 multiletter control sequences out of 15000+600000
+ 12852 strings out of 479023
+ 189569 string characters out of 5863351
+ 516389 words of memory out of 5000000
+ 29990 multiletter control sequences out of 15000+600000
  462050 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,6n,88p,893b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,6n,88p,893b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2020/texmf-dist/fonts/typ
 e1/urw/courier/ucrro8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/helvetic
@@ -624,10 +669,10 @@ e1/urw/courier/ucrro8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/helvetic
 f-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on zavrsni.pdf (27 pages, 1032831 bytes).
+Output written on zavrsni.pdf (32 pages, 3519248 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
- 345 compressed objects within 4 object streams
- 83 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 406 compressed objects within 5 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

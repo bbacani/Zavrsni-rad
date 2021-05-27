@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,14 +11,29 @@
   \url{https://artisticlicence.com/WebSiteMaster/User%20Guides/art-net.pdf},
   \\pristupljeno 10.06.2021.
 
+\bibitem[{ChamSys}(08.04.2021.)]{MagicQ_Manual}
+{ChamSys}, \emph{MagicQ User Manual, v1.9.1.0}, 08.04.2021., \\URL:
+  \url{https://secure.chamsys.co.uk/help/documentation/magicq}, \\pristupljeno
+  10.06.2021.
+
 \bibitem[{DMX GDTF Support}()]{dmx_gdtf}
 {DMX GDTF Support}, \\URL:
-  \url{https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/GDTFSupport/index.html},
+  \url{https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/GDTFSupport},
   \\pristupljeno 10.06.2021.
 
 \bibitem[{DMX Overview}()]{dmx_overview}
 {DMX Overview}, \\URL:
-  \url{https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/Overview/index.html},
+  \url{https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/Overview},
+  \\pristupljeno 10.06.2021.
+
+\bibitem[{DMX Quickstart}()]{dmx_quickstart}
+{DMX Quickstart}, \\URL:
+  \url{https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/Quickstart},
+  \\pristupljeno 10.06.2021.
+
+\bibitem[{DMX Template Overview}()]{dmx_template}
+{DMX Template Overview}, \\URL:
+  \url{https://docs.unrealengine.com/4.26/en-US/WorkingWithMedia/DMX/TemplateOverview},
   \\pristupljeno 10.06.2021.
 
 \bibitem[{Entertainment Services and Technology Association -
@@ -38,6 +53,9 @@ Farris, J., \emph{Forging new paths for filmmakers on "The Mandalorian"},
 \bibitem[{GDTF Share}()]{GDTF}
 {GDTF Share}, \\URL: \url{https://gdtf-share.com}, \\pristupljeno 10.06.2021.
 
+\bibitem[{HTC Vive}()]{HTC_Vive}
+{HTC Vive}, \\URL: \url{https://www.vive.com}, \\pristupljeno 10.06.2021.
+
 \bibitem[Kader(2019.)]{vpguide1}
 Kader, N., \emph{The Virtual Production Field Guide v1.2}, 2019., \\URL:
   \url{https://cdn2.unrealengine.com/Unreal+Engine%2Fvpfieldguide%2FVP-Field-Guide-V1.2.02-5d28ccec9909ff626e42c619bcbe8ed2bf83138d.pdf},
@@ -49,14 +67,28 @@ Kader, N., \emph{The Virtual Production Field Guide Volume 2, v1.0}, 2021.,
   \url{https://cdn2.unrealengine.com/Virtual+Production+Field+Guide+Volume+2+v1.0-5b06b62cbc5f.pdf},
   \\pristupljeno 10.06.2021.
 
+\bibitem[{MagicQ Software}()]{MagicQ_Software}
+{MagicQ Software}, \\URL: \url{https://chamsyslighting.com/products/magicq},
+  \\pristupljeno 10.06.2021.
+
 \bibitem[{Moment Factory}(22.02.2021.)]{dmx_previs}
 {Moment Factory}, \emph{DMX Previs Sample}, 22.02.2021., \\URL:
   \url{https://unrealengine.com/marketplace/en-US/learn/dmx-previs-sample},
   \\pristupljeno 10.06.2021.
 
+\bibitem[{Moslavac, M., Brzica, L., Šimić, Z.}(20.01.2021.)]{vp}
+{Moslavac, M., Brzica, L., Šimić, Z.}, \emph{Virtualna produkcija u Unreal
+  Engine 4 razvojnom okruženju, v2.0}, 20.01.2021., \\URL:
+  \url{https://gitlab.com/mirtamoslavac/projekt-r-fer-2020}, \\pristupljeno
+  10.06.2021.
+
 \bibitem[{Nierras, J.}(13.02.2021.)]{MagicQ_Setup}
 {Nierras, J.}, \emph{Using Chamsys MagicQ to control DMX Lighting in Unreal},
   13.02.2021., \\URL: \url{https://www.youtube.com/watch?v=xxliSWwjL6Q},
+  \\pristupljeno 10.06.2021.
+
+\bibitem[{SteamVR}()]{SteamVR}
+{SteamVR}, \\URL: \url{https://store.steampowered.com/app/250820/SteamVR},
   \\pristupljeno 10.06.2021.
 
 \bibitem[{Streaming Packets}()]{streaming_packets}
@@ -68,5 +100,9 @@ Kader, N., \emph{The Virtual Production Field Guide Volume 2, v1.0}, 2021.,
 {Subscription}, \\URL:
   \url{https://art-net.org.uk/how-it-works/streaming-packets/subscription},
   \\pristupljeno 10.06.2021.
+
+\bibitem[{Unreal Engine}()]{Unreal_Engine}
+{Unreal Engine}, \\URL: \url{https://www.unrealengine.com}, \\pristupljeno
+  10.06.2021.
 
 \end{thebibliography}
