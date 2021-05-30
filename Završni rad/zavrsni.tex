@@ -47,8 +47,6 @@ Filmska produkcija je izuzetno kompleksan proces koji je tipično linearan te se
 
 Virtualna produkcija je metoda slična agilnom razvoju, gdje se korištenjem pogonskog sklopa igara (engl. \emph{game engine}) prati kretnja kamere u stvarnom vremenu te se pozadinski sadržaj prikazuje na LED ekranu. Za razliku od tradicionalne, virtualna produkcija uvodi fleksibilnost u snimanje, omogućujući promjenu priče ili bilo kojeg dijela seta uz prisutnost cijelog tima, čime se štedi na vremenu i resursima (slika \ref{fig:slika 2-2}).
 
-\pagebreak
-
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=\linewidth]{slika 2-2.png}
@@ -80,6 +78,9 @@ Također, virtualna produkcija koristi se za hvatanje pokreta (engl. \emph{motio
 \pagebreak
 
 \section{Opis prototipa}
+Prototip za snimanje virtualne produkcije se sastoji od HTC Vive sustava sa dvije bazne stanice i HTC Vive Trackera nalijepljenog na kameru te LED ekrana računala. Kretanjem kamere HTC Vive Tracker detektira pokrete te se oni šalju iz stvarnog svijeta u virtualni svijet napravljen u Unreal Engineu, što rezultira promjenom virtualne kamere i scene prikazane na LED ekranu.\newline
+
+Bazne stanice su postavljene na zamišljenu dijagonalu prostora gdje se obavlja snimanje te su priključeni na izvor struje, a HTC Vive Tracker je bežično spojen putem USB adaptera kako bi se dobila sloboda kretanja kamere. Navedeno sklopovlje je povezano sa računalom pomoću SteamVR aplikacije. \cite{vp}
 
 \chapter{Upravljanje osvjetljenjem}
 Za upravljanje osvjetljenjem u industriji se koristi konzola za upravljanje rasvjetom, elektronički uređaj koji komunicira sa svjetlima, prigušivačima i ostalim specijalnim efektima putem protokola upravljanja. Osim komuniciranja direktno, neke konzole mogu komunicirati s uređajima putem mreže pomoću mrežnih protokola.
@@ -131,6 +132,7 @@ Većinu vremena atributu će biti dovoljan opseg unosa od jednog bajta (0-255), 
 
 \section{Mrežni protokoli}
 Porastom kompleksnosti i broja uređaja korištenih u predstavama pojavila se potreba za lakšim i bržim adresiranjem i upravljanjem rasvjetnim uređajima. Napretkom komunikacijskih tehnologija razvijeni su ethernet protokoli koji omogućuju prijenos više DMX svemira putem Cat5 kabla. Unreal Engine podržava dva ethernet protokola, Art-Net i sACN.
+
 \subsection{Art-Net}
 Art-Net je ethernet protokol temeljen na paketu protokola TCP/IP te se koristi za prijenos velikog broja DMX paketa putem UDP protokola. Najnovija revizija je Art-Net 4 i podržava prijenos 32,768 svemira (teoretski, stvarni broj ovisi o fizičkom sloju mreže i metodi prijenosa) i preko 1000 DMX priključaka (engl. \emph{ports}), gdje je adresa priključka svakog svemira kodirana kao 15-bitni broj (slika \ref{fig:slika 3-3}).
 
@@ -191,18 +193,20 @@ Simulacija je zamišljena kao predvizualizacija mini pozornice u kazalištu. Poz
 \section{Integracija s prototipom}
 Povezivanje s prototipom ostvaruje se korištenjem stvarne kamere, sustava za virtualnu stvarnost i LED zaslona. Kako se simulacija izvodi, kretanjem stvarne kamere mapiraju se pokreti u virtualnu kameru te se time krećemo po pozornici. Ispred LED zaslona stavljaju se objekti u stvarnom životu te se snima smješten objekt u virtualnoj sceni. Integracija je uspješna ako se dobije dojam da se objekt stvarno nalazi na pozornici, a simulirana svjetlost nalikuje stvarnoj svjetlosti.
 
-\textbf{Umetni sliku!}
-
 \chapter{Korištene tehnologije}
-\textbf{Unreal Engine} \cite{Unreal_Engine} je pogonski sklop igre (engl. \emph{game engine})
+\textbf{Unreal Engine} \cite{Unreal_Engine} je pogonski sklop igre (engl. \emph{game engine}) prvenstveno namijenjen za razvoj digitalnih igara za PC. Može se koristiti za izradu dvodimenzionalnih i trodimenzionalnih igara, aplikacija za virtualnu i proširenu stvarnost te za razvoj virtualnih setova korištenih u filmskoj industriji. Skripte se pišu programiranjem u jeziku C++ ili korištenjem vizualnog sustava skriptiranja \emph{Blueprints}. 
+Za izradu i testiranje simulacije korišten je Unreal Engine 4.26.2.\newline
 
-\textbf{MagicQ Software} \cite{MagicQ_Software} je
+\textbf{MagicQ Software} \cite{MagicQ_Software} je programsko sučelje za vizualizaciju i kontrolu osvjetljenja do 256 svemira (64 svemira za PC verziju). Omogućuje slanje DMX paketa preko mreže do aplikacija na računalu korištenjem Art-Net, Pathport, sACN i drugih protokola. Korisničko sučelje i funkcionalnosti su jednake kao i na fizičkoj konzoli te je moguć međusobni prijenos podataka preko mreže ili USB-a. 
+Za izradu i  testiranje simulacije korišten je MagicQ v1.8.9.0.\newline
 
-\textbf{DMX Template} \cite{dmx_template} je
+\textbf{SteamVR} \cite{SteamVR} je alat za pokretanje VR sadržaja na sustavima za virtualnu stvarnost poput HTC Vive, Oculus Rift i drugi. Koristi \emph{Lighthouse} sustav, laserski sustav za praćenje položaja i orijentacije korisnika u stvarnom vremenu te \emph{Chaperone} sustav za postavljanje i pregled granica prostora u sobi kako bi se spriječilo kretanje izvan dosega senzora te zaletavanje u zidove i druge predmete.
+Za testiranje simulacije korišten je SteamVR 1.16.10\newline
 
-\textbf{SteamVR} \cite{SteamVR} je
+\textbf{HTC Vive} \cite{HTC_Vive} je sustav za virtualnu stvarnost koji omogućuje korisniku kretanje u 3D prostoru te interakciju sa okolinom korištenjem ručnih kontrolera. Osim \emph{headseta}, kontrolera i baznih stanica može se koristiti dodatak HTC Vive Tracker za praćenje pozicije predmeta na koji je pričvršćen preko \emph{Lighthouse} sustava.
+Za testiranje simulacije korišten je HTC Vive Tracker, HTC Vive Tracker Dongle, HTC Vive Tracker Dongle Cradle i dvije bazne stanice.\newline
 
-\textbf{HTC Vive} \cite{HTC_Vive} je
+\textbf{DMX Template} \cite{dmx_template} je demo projekt u Unreal Engineu sa već omogućenim svim DMX dodacima te sadrži nacrte (engl. \emph{blueprints}) za DMX rasvjetne uređaje. Nacrti sadrže komponente koje su odgovorne za primanje DMX paketa. Projekt također sadrži tri mape sa unaprijed snimljenim ulaznim nizom DMX paketa.
 
 \chapter{Izrada simulacije osvjetljenja}
 
@@ -283,16 +287,52 @@ Nakon pokretanja scene, korištenjem simulatora šalju se DMX paketi do Unreal E
 \end{figure}
 
 \section{Simulacija}
+Za simulaciju je korišten \emph{DMX Template} koji već sadrži podešen cijeli \emph{DMX Library} i posložene rasvjetne uređaje u sceni. Potrebno je samo promijeniti \emph{Remote Universe Range Start} sa 1 u 0 kako bi se postigla kompatibilnost sa \emph{MagicQ} simulatorom.
 
-\subsection{Konzola}
+\subsection{Upravljanje simulatorom}
+U \emph{MagicQ} simulatoru za svaku vrstu rasvjetnog tijela u sceni stvori se nova glava (engl. \emph{Head}) te se dodijele jednake funkcije i početne vrijednosti. Nakon kreiranja, uređaje adresiramo na iste adrese kao i u \emph{DMX Libraryju}. Na kraju dobivamo grupe uređaja kojima možemo upravljati slanjem DMX paketa (slika \ref{fig:slika 6-9}).
 
-\subsection{Sekvencer}
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-9.png}
+	\caption{Grupe uređaja}
+	\label{fig:slika 6-9}
+\end{figure}
+
+Primjerice, odabirom grupe \emph{Heads} svim pokretnim glavama na svoj prvi kanal (kanal za boju) pošalje se vrijednost 45, na treći kanal (kanal za intenzitet) pošalje se vrijednost 255 te na sedmi i deveti kanal pošalje se vrijednost 128 (kanali za nagib i pomicanje) što rezultira upravljanjem pokretnim glavama u Unreal Engineu kao na slici \ref{fig:slika 6-10}.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-10.png}
+	\caption{Upravljanje pokretnim glavama}
+	\label{fig:slika 6-10}
+\end{figure}
+
+Drugi primjer, odabirom grupe \emph{Pyro} te slanjem vrijednosti 128 rezultira paljenem pirotehničkih efekata (slika \ref{fig:slika 6-11}). Na ovaj način se može upravljati cijelom setom u stvarnom vremenu.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{slika 6-11.png}
+	\caption{Paljenje pirotehnike}
+	\label{fig:slika 6-11}
+\end{figure}
+
+\pagebreak
+
+\subsection{Korištenje sekvencera}
 
 \chapter{Integracija s prototipom}
-\cite{vp}
+1\pagebreak
 
+2\pagebreak
+
+3\pagebreak
+
+4\pagebreak
 \chapter{Rezultati}
+1\pagebreak
 
+2\pagebreak
 \chapter{Zaključak}
 
 \raggedright
@@ -304,6 +344,8 @@ Sažetak na hrvatskom jeziku.
 
 \kljucnerijeci{Ključne riječi, odvojene zarezima.}
 \end{sazetak}
+
+\pagebreak
 
 \engtitle{CONNECTING VIRTUAL AND REAL LIGHTING USING THE UNREAL SYSTEM}
 \begin{abstract}

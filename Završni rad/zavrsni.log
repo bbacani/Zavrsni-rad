@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.3)  27 MAY 2021 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.3)  30 MAY 2021 02:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -527,56 +527,56 @@ File: ../Slike//slika 2-1.png Graphic file (type png)
 <use ../Slike//slika 2-1.png>
 Package pdftex.def Info: ../Slike//slika 2-1.png  used on input line 43.
 (pdftex.def)             Requested size: 412.56497pt x 165.81126pt.
+<../Slike//slika 2-2.png, id=178, 694.39426pt x 307.74976pt>
+File: ../Slike//slika 2-2.png Graphic file (type png)
+<use ../Slike//slika 2-2.png>
+Package pdftex.def Info: ../Slike//slika 2-2.png  used on input line 52.
+(pdftex.def)             Requested size: 412.56497pt x 182.84805pt.
 [2
 
  <../Slike//slika 2-1.png>]
-<../Slike//slika 2-2.png, id=187, 694.39426pt x 307.74976pt>
-File: ../Slike//slika 2-2.png Graphic file (type png)
-<use ../Slike//slika 2-2.png>
-Package pdftex.def Info: ../Slike//slika 2-2.png  used on input line 54.
-(pdftex.def)             Requested size: 412.56497pt x 182.84805pt.
 <../Slike//slika 2-3.png, id=193, 1927.2pt x 1284.8pt>
 File: ../Slike//slika 2-3.png Graphic file (type png)
 <use ../Slike//slika 2-3.png>
-Package pdftex.def Info: ../Slike//slika 2-3.png  used on input line 68.
+Package pdftex.def Info: ../Slike//slika 2-3.png  used on input line 66.
 (pdftex.def)             Requested size: 412.56497pt x 275.03075pt.
 <../Slike//slika 2-4.png, id=196, 1628.61972pt x 916.09859pt>
 File: ../Slike//slika 2-4.png Graphic file (type png)
 <use ../Slike//slika 2-4.png>
-Package pdftex.def Info: ../Slike//slika 2-4.png  used on input line 75.
+Package pdftex.def Info: ../Slike//slika 2-4.png  used on input line 73.
 (pdftex.def)             Requested size: 412.56497pt x 232.05742pt.
  [3 <../Slike//slika 2-2.png>] [4 <../Slike//slika 2-3.png> <../Slike//slika 2-
 4.png>] [5]
 Poglavlje 3.
-<../Slike//slika 3-1.png, id=218, 375.4025pt x 121.45375pt>
+<../Slike//slika 3-1.png, id=220, 375.4025pt x 121.45375pt>
 File: ../Slike//slika 3-1.png Graphic file (type png)
 <use ../Slike//slika 3-1.png>
-Package pdftex.def Info: ../Slike//slika 3-1.png  used on input line 94.
+Package pdftex.def Info: ../Slike//slika 3-1.png  used on input line 95.
 (pdftex.def)             Requested size: 412.56497pt x 133.4846pt.
 [6
 
  <../Slike//slika 3-1.png>] [7]
-<../Slike//slika 3-2.png, id=232, 305.14pt x 250.9375pt>
+<../Slike//slika 3-2.png, id=234, 305.14pt x 250.9375pt>
 File: ../Slike//slika 3-2.png Graphic file (type png)
 <use ../Slike//slika 3-2.png>
-Package pdftex.def Info: ../Slike//slika 3-2.png  used on input line 116.
+Package pdftex.def Info: ../Slike//slika 3-2.png  used on input line 117.
 (pdftex.def)             Requested size: 412.56497pt x 339.29471pt.
  [8 <../Slike//slika 3-2.png>]
-<../Slike//slika 3-3.png, id=246, 371.58826pt x 70.46326pt>
+<../Slike//slika 3-3.png, id=248, 371.58826pt x 70.46326pt>
 File: ../Slike//slika 3-3.png Graphic file (type png)
 <use ../Slike//slika 3-3.png>
-Package pdftex.def Info: ../Slike//slika 3-3.png  used on input line 139.
+Package pdftex.def Info: ../Slike//slika 3-3.png  used on input line 141.
 (pdftex.def)             Requested size: 412.56497pt x 78.2377pt.
-<../Slike//slika 3-4.png, id=250, 144.54pt x 67.9338pt>
+<../Slike//slika 3-4.png, id=252, 144.54pt x 67.9338pt>
 File: ../Slike//slika 3-4.png Graphic file (type png)
 <use ../Slike//slika 3-4.png>
-Package pdftex.def Info: ../Slike//slika 3-4.png  used on input line 152.
+Package pdftex.def Info: ../Slike//slika 3-4.png  used on input line 154.
 (pdftex.def)             Requested size: 412.56497pt x 193.91599pt.
  [9 <../Slike//slika 3-3.png>] [10 <../Slike//slika 3-4.png>]
-<../Slike//slika 3-5.png, id=275, 1052.93375pt x 559.08875pt>
+<../Slike//slika 3-5.png, id=277, 1052.93375pt x 559.08875pt>
 File: ../Slike//slika 3-5.png Graphic file (type png)
 <use ../Slike//slika 3-5.png>
-Package pdftex.def Info: ../Slike//slika 3-5.png  used on input line 177.
+Package pdftex.def Info: ../Slike//slika 3-5.png  used on input line 179.
 (pdftex.def)             Requested size: 412.56497pt x 219.06744pt.
  [11 <../Slike//slika 3-5.png>]
 Poglavlje 4.
@@ -586,78 +586,95 @@ Poglavlje 4.
 Poglavlje 5.
 [14
 
-]
+] [15]
 Poglavlje 6.
-[15
+[16
 
 ]
-<../Slike//slika 6-1.png, id=318, 747.9945pt x 274.02374pt>
+<../Slike//slika 6-1.png, id=324, 747.9945pt x 274.02374pt>
 File: ../Slike//slika 6-1.png Graphic file (type png)
 <use ../Slike//slika 6-1.png>
-Package pdftex.def Info: ../Slike//slika 6-1.png  used on input line 221.
+Package pdftex.def Info: ../Slike//slika 6-1.png  used on input line 225.
 (pdftex.def)             Requested size: 412.56497pt x 151.14418pt.
-<../Slike//slika 6-2.png, id=320, 1156.32pt x 510.10574pt>
+<../Slike//slika 6-2.png, id=326, 1156.32pt x 510.10574pt>
 File: ../Slike//slika 6-2.png Graphic file (type png)
 <use ../Slike//slika 6-2.png>
-Package pdftex.def Info: ../Slike//slika 6-2.png  used on input line 230.
+Package pdftex.def Info: ../Slike//slika 6-2.png  used on input line 234.
 (pdftex.def)             Requested size: 412.56497pt x 181.99559pt.
- [16 <../Slike//slika 6-1.png> <../Slike//slika 6-2.png>]
-<../Slike//slika 6-3.png, id=332, 1156.32pt x 496.85625pt>
+ [17 <../Slike//slika 6-1.png> <../Slike//slika 6-2.png>]
+<../Slike//slika 6-3.png, id=338, 1156.32pt x 496.85625pt>
 File: ../Slike//slika 6-3.png Graphic file (type png)
 <use ../Slike//slika 6-3.png>
-Package pdftex.def Info: ../Slike//slika 6-3.png  used on input line 239.
+Package pdftex.def Info: ../Slike//slika 6-3.png  used on input line 243.
 (pdftex.def)             Requested size: 412.56497pt x 177.26843pt.
-<../Slike//slika 6-4.png, id=335, 1156.32pt x 650.43pt>
+<../Slike//slika 6-4.png, id=341, 1156.32pt x 650.43pt>
 File: ../Slike//slika 6-4.png Graphic file (type png)
 <use ../Slike//slika 6-4.png>
-Package pdftex.def Info: ../Slike//slika 6-4.png  used on input line 250.
+Package pdftex.def Info: ../Slike//slika 6-4.png  used on input line 254.
 (pdftex.def)             Requested size: 412.56497pt x 232.06049pt.
-<../Slike//slika 6-5.png, id=338, 900.966pt x 498.06075pt>
+<../Slike//slika 6-5.png, id=344, 900.966pt x 498.06075pt>
 File: ../Slike//slika 6-5.png Graphic file (type png)
 <use ../Slike//slika 6-5.png>
-Package pdftex.def Info: ../Slike//slika 6-5.png  used on input line 259.
+Package pdftex.def Info: ../Slike//slika 6-5.png  used on input line 263.
 (pdftex.def)             Requested size: 412.56497pt x 228.06955pt.
-<../Slike//slika 6-6.png, id=339, 669.702pt x 341.47575pt>
+<../Slike//slika 6-6.png, id=345, 669.702pt x 341.47575pt>
 File: ../Slike//slika 6-6.png Graphic file (type png)
 <use ../Slike//slika 6-6.png>
-Package pdftex.def Info: ../Slike//slika 6-6.png  used on input line 266.
+Package pdftex.def Info: ../Slike//slika 6-6.png  used on input line 270.
 (pdftex.def)             Requested size: 412.56497pt x 210.36325pt.
-<../Slike//slika 6-7.png, id=340, 900.966pt x 496.85625pt>
+<../Slike//slika 6-7.png, id=346, 900.966pt x 496.85625pt>
 File: ../Slike//slika 6-7.png Graphic file (type png)
 <use ../Slike//slika 6-7.png>
-Package pdftex.def Info: ../Slike//slika 6-7.png  used on input line 273.
+Package pdftex.def Info: ../Slike//slika 6-7.png  used on input line 277.
 (pdftex.def)             Requested size: 412.56497pt x 227.51799pt.
-<../Slike//slika 6-8.png, id=341, 668.4975pt x 341.47575pt>
+<../Slike//slika 6-8.png, id=347, 668.4975pt x 341.47575pt>
 File: ../Slike//slika 6-8.png Graphic file (type png)
 <use ../Slike//slika 6-8.png>
-Package pdftex.def Info: ../Slike//slika 6-8.png  used on input line 280.
+Package pdftex.def Info: ../Slike//slika 6-8.png  used on input line 284.
 (pdftex.def)             Requested size: 412.56497pt x 210.74883pt.
- [17 <../Slike//slika 6-3.png> <../Slike//slika 6-4.png>] [18 <../Slike//slika 
-6-5.png> <../Slike//slika 6-6.png>] [19 <../Slike//slika 6-7.png> <../Slike//sl
+ [18 <../Slike//slika 6-3.png> <../Slike//slika 6-4.png>] [19 <../Slike//slika 
+6-5.png> <../Slike//slika 6-6.png>] [20 <../Slike//slika 6-7.png> <../Slike//sl
 ika 6-8.png>]
-[20]
+<../Slike//slika 6-9.png, id=375, 355.92975pt x 162.6075pt>
+File: ../Slike//slika 6-9.png Graphic file (type png)
+<use ../Slike//slika 6-9.png>
+Package pdftex.def Info: ../Slike//slika 6-9.png  used on input line 297.
+(pdftex.def)             Requested size: 412.56497pt x 188.49332pt.
+<../Slike//slika 6-10.png, id=377, 1156.32pt x 650.43pt>
+File: ../Slike//slika 6-10.png Graphic file (type png)
+<use ../Slike//slika 6-10.png>
+Package pdftex.def Info: ../Slike//slika 6-10.png  used on input line 306.
+(pdftex.def)             Requested size: 412.56497pt x 232.06049pt.
+<../Slike//slika 6-11.png, id=379, 1156.32pt x 650.43pt>
+File: ../Slike//slika 6-11.png Graphic file (type png)
+<use ../Slike//slika 6-11.png>
+Package pdftex.def Info: ../Slike//slika 6-11.png  used on input line 315.
+(pdftex.def)             Requested size: 412.56497pt x 232.06049pt.
+
+[21 <../Slike//slika 6-9.png>] [22 <../Slike//slika 6-10.png> <../Slike//slika 
+6-11.png>] [23]
 Poglavlje 7.
-[21
+[24
 
-]
+] [25] [26] [27]
 Poglavlje 8.
-[22
+[28
 
-]
+] [29]
 Poglavlje 9.
-(./zavrsni.bbl [23
+(./zavrsni.bbl [30
 
-] [24
+] [31
 
-] [25]) [26] [27] (./zavrsni.aux)
+] [32]) [33] [34] [35] (./zavrsni.aux)
 Package rerunfilecheck Info: File `zavrsni.out' has not changed.
-(rerunfilecheck)             Checksum: FFCA11D8D8F0ADD0FDE1EB2E9AFD888E;3515.
+(rerunfilecheck)             Checksum: 2C0BEF344106ADF071B0F9AF86637E86;3664.
  ) 
 Here is how much of TeX's memory you used:
- 12852 strings out of 479023
- 189569 string characters out of 5863351
- 516389 words of memory out of 5000000
- 29990 multiletter control sequences out of 15000+600000
+ 12884 strings out of 479023
+ 190182 string characters out of 5863351
+ 516559 words of memory out of 5000000
+ 30008 multiletter control sequences out of 15000+600000
  462050 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,6n,88p,893b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -669,10 +686,10 @@ e1/urw/courier/ucrro8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/helvetic
 f-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on zavrsni.pdf (32 pages, 3519248 bytes).
+Output written on zavrsni.pdf (40 pages, 5906204 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 302 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 442 compressed objects within 5 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
