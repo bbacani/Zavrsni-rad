@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,12 @@
   Communication Protocol, v1.4dd2}, 01.02.2021., \\URL:
   \url{https://artisticlicence.com/WebSiteMaster/User%20Guides/art-net.pdf},
   \\pristupljeno 10.06.2021.
+
+\bibitem[Baroulette(02.12.2019.)]{MagicQ_GDTF}
+Baroulette, S., \emph{ChamSys MagicQ Software Now Supports Import Of GDTF
+  Personality Files}, 02.12.2019., \\URL:
+  \url{https://chamsyslighting.com/blogs/news/chamsys-magicq-software-now-supports-import-of-gdtf-personality-files},
+  pristupljeno 10.06.2021.
 
 \bibitem[{ChamSys}(08.04.2021.)]{MagicQ_Manual}
 {ChamSys}, \emph{MagicQ User Manual, v1.9.1.0}, 08.04.2021., \\URL:
@@ -36,6 +42,11 @@
   \url{https://docs.unrealengine.com/4.26/en-US/WorkingWithMedia/DMX/TemplateOverview},
   \\pristupljeno 10.06.2021.
 
+\bibitem[{DMX Tracks}()]{dmx_tracks}
+{DMX Tracks}, \\URL:
+  \url{https://docs.unrealengine.com/4.26/en-US/WorkingWithMedia/DMX/Tracks},
+  \\pristupljeno 10.06.2021.
+
 \bibitem[{Entertainment Services and Technology Association -
   ESTA}(07.11.2018.)]{sACN}
 {Entertainment Services and Technology Association - ESTA}, \emph{ANSI E1.31 -
@@ -56,13 +67,13 @@ Farris, J., \emph{Forging new paths for filmmakers on "The Mandalorian"},
 \bibitem[{HTC Vive}()]{HTC_Vive}
 {HTC Vive}, \\URL: \url{https://www.vive.com}, \\pristupljeno 10.06.2021.
 
-\bibitem[Kader(2019.)]{vpguide1}
-Kader, N., \emph{The Virtual Production Field Guide v1.2}, 2019., \\URL:
+\bibitem[Kadner(2019.)]{vpguide1}
+Kadner, N., \emph{The Virtual Production Field Guide v1.2}, 2019., \\URL:
   \url{https://cdn2.unrealengine.com/Unreal+Engine%2Fvpfieldguide%2FVP-Field-Guide-V1.2.02-5d28ccec9909ff626e42c619bcbe8ed2bf83138d.pdf},
   pristupljeno 10.06.2021.
 
-\bibitem[Kader(2021.)]{vpguide2}
-Kader, N., \emph{The Virtual Production Field Guide Volume 2, v1.0}, 2021.,
+\bibitem[Kadner(2021.)]{vpguide2}
+Kadner, N., \emph{The Virtual Production Field Guide Volume 2, v1.0}, 2021.,
   \\URL:
   \url{https://cdn2.unrealengine.com/Virtual+Production+Field+Guide+Volume+2+v1.0-5b06b62cbc5f.pdf},
   \\pristupljeno 10.06.2021.
@@ -82,8 +93,8 @@ Kader, N., \emph{The Virtual Production Field Guide Volume 2, v1.0}, 2021.,
   \url{https://gitlab.com/mirtamoslavac/projekt-r-fer-2020}, \\pristupljeno
   10.06.2021.
 
-\bibitem[{Nierras, J.}(13.02.2021.)]{MagicQ_Setup}
-{Nierras, J.}, \emph{Using Chamsys MagicQ to control DMX Lighting in Unreal},
+\bibitem[Nierras(13.02.2021.)]{MagicQ_Setup}
+Nierras, J., \emph{Using Chamsys MagicQ to control DMX Lighting in Unreal},
   13.02.2021., \\URL: \url{https://www.youtube.com/watch?v=xxliSWwjL6Q},
   \\pristupljeno 10.06.2021.
 

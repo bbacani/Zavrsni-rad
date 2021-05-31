@@ -16,7 +16,7 @@
 \contentsline {section}{\numberline {4.1}Simulacija osvjetljenja}{12}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Integracija s prototipom}{12}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Korištene tehnologije}{14}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Izrada simulacije osvjetljenja}{16}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Simulacija osvjetljenja}{16}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Postavljanje simulatora}{16}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Povezivanje s Unreal Engineom}{16}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Simulacija}{21}{section.6.3}%
@@ -25,4 +25,4 @@
 \contentsline {chapter}{\numberline {7}Integracija s prototipom}{24}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Rezultati}{27}{chapter.8}%
 \contentsline {chapter}{\numberline {9}Zaključak}{29}{chapter.9}%
-\contentsline {chapter}{Literatura}{30}{chapter*.25}%
+\contentsline {chapter}{Literatura}{30}{chapter*.26}%

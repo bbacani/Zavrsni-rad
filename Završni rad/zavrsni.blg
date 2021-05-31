@@ -5,6 +5,8 @@ The style file: fer.bst
 Database file #1: literatura.bib
 You can't pop an empty literal stack for entry art-net
 while executing---line 1400 of file fer.bst
+You can't pop an empty literal stack for entry MagicQ_GDTF
+while executing---line 1400 of file fer.bst
 You can't pop an empty literal stack for entry MagicQ_Manual
 while executing---line 1400 of file fer.bst
 Warning--empty year in dmx_gdtf
@@ -18,6 +20,9 @@ You can't pop an empty literal stack for entry dmx_quickstart
 while executing---line 1400 of file fer.bst
 Warning--empty year in dmx_template
 You can't pop an empty literal stack for entry dmx_template
+while executing---line 1400 of file fer.bst
+Warning--empty year in dmx_tracks
+You can't pop an empty literal stack for entry dmx_tracks
 while executing---line 1400 of file fer.bst
 You can't pop an empty literal stack for entry sACN
 while executing---line 1400 of file fer.bst
@@ -54,45 +59,45 @@ while executing---line 1400 of file fer.bst
 Warning--empty year in Unreal_Engine
 You can't pop an empty literal stack for entry Unreal_Engine
 while executing---line 1400 of file fer.bst
-You've used 20 entries,
+You've used 22 entries,
             2761 wiz_defined-function locations,
-            680 strings with 7318 characters,
-and the built_in function-call counts, 5321 in all, are:
-= -- 458
-> -- 200
-< -- 20
-+ -- 80
-- -- 60
-* -- 349
-:= -- 848
-add.period$ -- 40
-call.type$ -- 20
-change.case$ -- 69
-chr.to.int$ -- 20
-cite$ -- 51
-duplicate$ -- 249
-empty$ -- 490
-format.name$ -- 80
-if$ -- 1068
+            689 strings with 7635 characters,
+and the built_in function-call counts, 5851 in all, are:
+= -- 504
+> -- 220
+< -- 22
++ -- 88
+- -- 66
+* -- 384
+:= -- 932
+add.period$ -- 44
+call.type$ -- 22
+change.case$ -- 76
+chr.to.int$ -- 22
+cite$ -- 56
+duplicate$ -- 274
+empty$ -- 539
+format.name$ -- 88
+if$ -- 1175
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 68
-num.names$ -- 80
-pop$ -- 215
+newline$ -- 74
+num.names$ -- 88
+pop$ -- 236
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 66
 quote$ -- 0
-skip$ -- 208
+skip$ -- 229
 stack$ -- 0
-substring$ -- 40
-swap$ -- 9
+substring$ -- 44
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 220
-warning$ -- 11
-while$ -- 60
+type$ -- 242
+warning$ -- 12
+while$ -- 66
 width$ -- 0
-write$ -- 245
-(There were 20 error messages)
+write$ -- 269
+(There were 22 error messages)
