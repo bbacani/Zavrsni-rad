@@ -336,7 +336,7 @@ Poslani DMX paketi mogu se snimiti, uređivati i reproducirati pomoću sekvencer
 \chapter{Integracija s prototipom}
 Povezivanje prototipa s Unreal sustavom ostvareno je korištenjem SteamVR aplikacije unutar Steam okruženja i SteamVR dodatka u Unreal Engineu. SteamVR aplikaciju potrebno je prilagoditi za snimanje bez headseta (engl. \emph{head-mounted display}, skraćeno HMD) omogućavanjem i aktivacijom SteamVR \emph{null drivera}. Nakon toga, tracker se bežično povezuje s računalom preko USB-a kako bi se imala sloboda kretanja kod snimanja \cite{vp}. \newline
 
-HTC Vive Tracker je potrebno upariti unutar SteamVR aplikacije čime ako je uspješno statusna lampica na trackeru postane zelena. Zatim, u Unreal Engineu je stvoren novi pijun (engl. \emph{Default Pawn}) te mu je kao dijete dodan \emph{Cine Camera Actor} koji u sebi sadrži komponente \emph{SceneComponent} i \emph{CameraComponent}. Nad virtualnom kamerom se stvara nacrt (engl. \emph{blueprint}) koji prati pokrete HTC Vive Trackera te prenosi informacije o njegovom položaju. Također, potrebno je urediti \emph{Level Blueprint} kako bi novostvorena kamera postala glavna kamera. Na kraju, tracker se pričvršćuje na mobitel tako da je statusna lampica na njemu okrenuta prema gore, a lice mu je usmjereno u smjeru snimanja videa \cite{vp}. \newline
+HTC Vive Tracker je potrebno upariti unutar SteamVR aplikacije čime ako je uspješno statusna lampica na trackeru postane zelena. Zatim, u Unreal Engineu je stvoren novi pijun (engl. \emph{Default Pawn}) te mu je kao dijete dodan \emph{Cine Camera Actor} koji u sebi sadrži komponente \emph{SceneComponent} i \emph{CameraComponent}. Nad virtualnom kamerom se stvara nacrt (engl. \emph{blueprint}) koji prati pokrete HTC Vive Trackera te prenosi informacije o njegovom položaju. Također, potrebno je urediti \emph{Level Blueprint} kako bi novostvorena kamera postala glavna kamera. Na kraju, tracker se pričvršćuje na mobitel tako da je statusna lampica na njemu okrenuta prema gore te je usmjeren prema LED ekranu \cite{vp}. \newline
 
 Ispred LED ekrana postavljaju se objekti iz stvarnog života te se može pokrenuti snimanje pritiskom na \emph{Play} u Unreal Engineu, čime se pokreće snimljena sekvenca \emph{LS FixtureDemo} dostupna u projektu \emph{DMX Template}. Može se pokrenuti bilo koja druga sekvenca ili samo scena bez sekvence pa se upravljanje scenom može ostvariti korištenjem \emph{MagicQ} simulatora konzole. Kretanjem u prostoru detektiraju se pokreti stvarne kamere što se prenosi do virtualne kamere te se dobiva efekt virtualne produkcije (slika \ref{fig:slika 7-1}). Kretanje je ograničeno veličinom LED ekrana na kojem je prikazan virtualni svijet i veličinom prostora u kojem se snima, odnosno prostora koji pokrivaju dostupne bazne stanice.
 
@@ -371,6 +371,11 @@ Unreal Engine osim pogreške u nemogućnosti uvoza nacrta i ostalih objekata iz 
 Kod snimanja videa prostor je potrebno zamračiti kako bi se spriječio odsjaj vanjskog svjetla na LED ekranu. Pri kretanju potrebno je paziti da kamera ne izađe iz okvira ekrana jer inače se gubi iluzija prisutnosti stvarnog objekta u virtualnom prostoru. Virtualna produkcija koristi puno računalnih resursa te u slučaju pokretanja na laptopu nakon 10 minuta dolazi do pregrijavanja zbog čega je potrebno pričekati par minuta prije ponovnog snimanja.
 
 \chapter{Zaključak}
+U ovom radu proučena je podrška za virtualnu produkciju kao i podrška za upravljanje osvjetljenjem DMX protokolom u Unreal Engineu. Za testiranje je korištena predvizualizacija svjetlosnog u čijoj sceni su sadržani različiti rasvjetni uređaji. Upravljanje osvjetljenjem ostvareno MagicQ simulatorom konzole koji šalje DMX pakete preko Art-Net mrežnog protokola do Unreal Enginea. \newline
+
+Povezivanje simulatora konzole i scene se trebalo raditi ručno zbog nemogućnosti čitanja GDTF datoteka u simulatoru što je inače odlično rješenje za ubrzavanje povezivanja te rješava problem kompatibilnosti za razliku od ručnog unosa postavki uređaja. Također, u budućnosti će Unreal Engine imati podršku za uvoz tekstura i modela uređaja iz GDTF datoteke što je veoma poželjna funkcionalnost. \newline
+
+Integracija s prototipom trenutno ima tehničkih poteškoća kod povezivanja sa SteamVR aplikacijom, ali nakon postavljanja snimanje se odvija bez problema uz ograničeno kretanje zbog veličine ekrana i prostora koji pokrivaju bazne stanice VR sustava te se virtualna svjetlost u predvizualizaciji ponaša kao stvarna svjetlost.
 
 \raggedright
 \bibliography{literatura}
@@ -383,7 +388,7 @@ Razvijena je simulacija osvjetljenja u Unreal Engineu kojom se upravlja slanjem 
 
 Simulacija se povezala s prototipom za praćenje kamere korištenjem HTC Vive sustava za virtualnu stvarnost i SteamVR aplikacije. Za snimanje videa HTC Vive Tracker je bio pričvršćen na mobitel te su se snimali objekti iz stvarnog života postavljeni ispred LED ekrana.
 
-\kljucnerijeci{virtualna produkcija, DMX, ethernet protokol, simulacija osvjetljenja, praćenje kamere, virtualna stvarnost}
+\kljucnerijeci{virtualna produkcija, DMX, simulacija osvjetljenja, Unreal Engine, praćenje kamere, virtualna stvarnost}
 \end{sazetak}
 
 \pagebreak
@@ -396,7 +401,7 @@ A lighting simulation was developed in Unreal Engine that controls the sending o
 
 The simulation was connected to a prototype camera tracking system using the HTC Vive virtual reality system and SteamVR app. For video recording, the HTC Vive Tracker was attached to a mobile phone, and real-life objects were placed in front of the LED screen.
 
-\keywords{Virtual Production, DMX, Ethernet protocol, lightning simulation, camera tracking, Virtual Reality}
+\keywords{Virtual Production, DMX, lightning simulation, Unreal Engine, camera tracking, Virtual Reality}
 \end{abstract}
 
 \end{document}
