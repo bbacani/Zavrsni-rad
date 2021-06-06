@@ -35,7 +35,7 @@
 \tableofcontents
 
 \chapter{Uvod}
-Ogromna popularnost industrije digitalnih igara dovela je do razvoja velikog broja sustava za razvoj igara poput Unreal Enginea. Ovakvi sustavi imaju podršku za upravljanjem virtualnom scenom i objektima u njoj što se pokazalo korisnim u filmskoj industriji. Tako pomoću virtualne produkcije umjesto korištenja zelenih panela moguće je prikazati pozadinski pejzaž i vizualne efekte na velikim ekranima u stvarnom vremenu. \newline
+Ogromna popularnost industrije digitalnih igara dovela je do razvoja velikog broja sustava za razvoj igara poput Unreal Enginea. Ovakvi sustavi imaju podršku za upravljanjem virtualnom scenom i objektima u njoj što se pokazalo korisnim u filmskoj industriji. Tako pomoću virtualne produkcije umjesto korištenja zelenih panela moguće je prikazati pozadinski pejzaž i vizualne efekte u stvarnom vremenu, projiciranjem pozadine scene iza glumaca i objekata seta na velikim LED ekranima. \newline
 
 Zadatak ovog rada je proučiti protokole za upravljanje osvjetljenjem i podršku za virtualnu produkciju u Unreal Engineu te zatim implementirati sustav za upravljanje osvjetljenjem koji povezuje virtualno i stvarno osvjetljenje. Za upravljanje osvjetljenjem korišten je simulator upravljačke konzole za osvjetljenje koji šalje signale do Unreal Enginea. Na kraju, sustav se integrira sa sustavom za detekciju položaja kamere. \newline
 
@@ -86,7 +86,9 @@ Također, virtualna produkcija koristi se za hvatanje pokreta (engl. \emph{motio
 \section{Opis prototipa}
 Prototip za snimanje virtualne produkcije se sastoji od HTC Vive sustava s dvije bazne stanice i HTC Vive Trackera nalijepljenog na kameru te LED ekrana računala. Kretanjem kamere HTC Vive Tracker detektira pokrete te se oni šalju iz stvarnog svijeta u virtualni svijet napravljen u Unreal Engineu, što rezultira promjenom virtualne kamere i scene prikazane na LED ekranu.\newline
 
-Bazne stanice su postavljene na zamišljenu dijagonalu prostora gdje se obavlja snimanje te su priključeni na izvor struje, a HTC Vive Tracker je bežično spojen putem USB adaptera kako bi se dobila sloboda kretanja kamere. Navedeno sklopovlje je povezano s računalom pomoću SteamVR aplikacije.
+Bazne stanice su postavljene na zamišljenu dijagonalu prostora gdje se obavlja snimanje te su priključeni na izvor struje, a HTC Vive Tracker je bežično spojen putem USB adaptera (HTC Vive Tracker Dongle) priključenim na računalo kako bi se dobila sloboda kretanja kamere. Navedeno sklopovlje je povezano s računalom pomoću SteamVR aplikacije \cite{vp}.\\
+
+\textbf{Umetni sliku!}
 
 \chapter{Upravljanje osvjetljenjem}
 Za upravljanje osvjetljenjem u industriji se koristi konzola za upravljanje rasvjetom, elektronički uređaj koji komunicira sa svjetlima, prigušivačima i ostalim specijalnim efektima putem protokola upravljanja. Osim komuniciranja direktno, neke konzole mogu komunicirati s uređajima putem mreže pomoću mrežnih protokola.
@@ -140,7 +142,7 @@ Većinu vremena atributu će biti dovoljan opseg unosa od jednog bajta (0-255), 
 Porastom kompleksnosti i broja uređaja korištenih u predstavama pojavila se potreba za lakšim i bržim adresiranjem i upravljanjem rasvjetnim uređajima. Napretkom komunikacijskih tehnologija razvijeni su ethernet protokoli koji omogućuju prijenos više DMX svemira putem Cat5 kabla. Unreal Engine podržava dva ethernet protokola, Art-Net i sACN.
 
 \subsection{Art-Net}
-Art-Net je ethernet protokol temeljen na paketu protokola TCP/IP te se koristi za prijenos velikog broja DMX paketa putem UDP protokola. Najnovija revizija je Art-Net 4 i podržava prijenos 32,768 svemira (teoretski, stvarni broj ovisi o fizičkom sloju mreže i metodi prijenosa) i preko 1000 DMX priključaka (engl. \emph{ports}), gdje je adresa priključka svakog svemira kodirana kao 15-bitni broj (slika \ref{fig:slika 3-3}).
+Art-Net je ethernet protokol temeljen na TCP/IP protokolnom složaju te se koristi za prijenos velikog broja DMX paketa putem UDP protokola. Najnovija revizija je Art-Net 4 i podržava prijenos 32,768 svemira (teoretski, stvarni broj ovisi o fizičkom sloju mreže i metodi prijenosa) i preko 1000 DMX priključaka (engl. \emph{ports}), gdje je adresa priključka svakog svemira kodirana kao 15-bitni broj (slika \ref{fig:slika 3-3}).
 
 \begin{figure}[htp]
 	\centering
@@ -334,7 +336,7 @@ Poslani DMX paketi mogu se snimiti, uređivati i reproducirati pomoću sekvencer
 \end{figure}
 
 \chapter{Integracija s prototipom}
-Povezivanje prototipa s Unreal sustavom ostvareno je korištenjem SteamVR aplikacije unutar Steam okruženja i SteamVR dodatka u Unreal Engineu. SteamVR aplikaciju potrebno je prilagoditi za snimanje bez headseta (engl. \emph{head-mounted display}, skraćeno HMD) omogućavanjem i aktivacijom SteamVR \emph{null drivera}. Nakon toga, tracker se bežično povezuje s računalom preko USB-a kako bi se imala sloboda kretanja kod snimanja \cite{vp}. \newline
+Povezivanje prototipa s Unreal sustavom ostvareno je korištenjem SteamVR aplikacije unutar Steam okruženja i SteamVR dodatka u Unreal Engineu. SteamVR aplikaciju potrebno je prilagoditi za snimanje bez headseta (engl. \emph{head-mounted display}, skraćeno HMD) omogućavanjem i aktivacijom SteamVR \emph{null drivera}. Nakon toga, tracker se bežično povezuje s računalom preko USB adaptera koji je priključen na korišteno računalo kako bi se dobila sloboda kretanja kod snimanja \cite{vp}. \newline
 
 HTC Vive Tracker je potrebno upariti unutar SteamVR aplikacije čime ako je uspješno statusna lampica na trackeru postane zelena. Zatim, u Unreal Engineu je stvoren novi pijun (engl. \emph{Default Pawn}) te mu je kao dijete dodan \emph{Cine Camera Actor} koji u sebi sadrži komponente \emph{SceneComponent} i \emph{CameraComponent}. Nad virtualnom kamerom se stvara nacrt (engl. \emph{blueprint}) koji prati pokrete HTC Vive Trackera te prenosi informacije o njegovom položaju. Također, potrebno je urediti \emph{Level Blueprint} kako bi novostvorena kamera postala glavna kamera. Na kraju, tracker se pričvršćuje na mobitel tako da je statusna lampica na njemu okrenuta prema gore te je usmjeren prema LED ekranu \cite{vp}. \newline
 
