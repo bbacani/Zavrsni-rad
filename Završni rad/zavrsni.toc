@@ -25,4 +25,4 @@
 \contentsline {chapter}{\numberline {7}Integracija s prototipom}{24}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Rezultati}{27}{chapter.8}%
 \contentsline {chapter}{\numberline {9}Zaključak}{29}{chapter.9}%
-\contentsline {chapter}{Literatura}{30}{chapter*.26}%
+\contentsline {chapter}{Literatura}{30}{chapter*.27}%
